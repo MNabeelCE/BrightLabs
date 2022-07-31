@@ -11,14 +11,18 @@ main {
 }
 .main-box{
     border-radius: 6px;
+    width: 84px;
     background: #FFFFFF;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.04);
-    border-radius: 6px;
 }
 .score-box{
     background-color: #4ECB71;
     color: #fff;
+    padding: 10px;
+    background: #4ECB71;
     border-radius: 6px 6px 0px 0px;
+ }
+ .inner-score-box{
  }
  .hourly{
    font-weight: 700;
@@ -29,11 +33,135 @@ main {
    font-size: 11px;
    margin-left: 8px;
  }
- .inner-number h5{
+ .inner-score-box .number-title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 135%;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
     color: #4ECB71;
+}
+
+
+ /* right buttons  */
+ .custom-border{
+    border: 1px solid #565656!important;
+    border-radius: 3px !important;
+    display: block !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    color: #565656 !important;
+  }
+  .custom-img{
+    margin-right: 8px;
+  }
+  .tick{
+    background: #FF9012 !important;
+    color: #fff !important;
+  }
+  .score span{
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #656565;
+  }
+
+ .client .about-client{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FF9012;
+    margin-left: 6px;
+}
+.location{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 135%;
+    color: #636363;
+    margin-left: 6px;
+}
+.client-stars{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+.total-star{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 135%;
+    color: #636363;
+}
+.rate-client{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 135%;
+    color: #656565;
+}
+.client-info-box{
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+.custom-border-bottom{
+    border-bottom: 0.5px dashed #656565;
+    margin-top: -8px;
+    padding: 5px 0;
+}
+.slider-border-bottom{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.23);
+    border-top: 0.5px solid rgba(0, 0, 0, 0.23);
+}
+  .slider-section .slide-btn {
+    background-color: #fff;
+    border-radius: 25.5px;
+    font-size: 10px;
+    color: #646464;
+    display: inline-block;
  }
+.green-rate{
+    font-size: 13px;
+    font-weight: 700;
+    color: #4ECB71;
+  }
+  .total-project{
+    font-weight: 700;
+  }
+  .red-rate{
+    color: #FF0000;
+    font-weight: bold;
+  }
+.pera{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 19px;
+}
+.note-title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135%;
+    color: #474747;
 
+}
+  .individual{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    color: #656565;
+    margin-left: 3px;
 
+  }
 
 @media only screen and (max-width: 855px) {
     .main__cards {

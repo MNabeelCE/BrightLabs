@@ -9,11 +9,10 @@
     z-index: 2;
 }
  .sidepanel-inner {
-     position: relative;
+    position: relative;
     background: #fff;
     box-shadow: 0px 4px 34px rgb(0 0 0 / 5%);
     border-radius: 16px;
-    padding: 20px;
     width: 260px;
     height: 100%;
     -webkit-transition: all .5s;
@@ -58,19 +57,52 @@
 .app-nav-main{
  overflow-y:auto;
 }
+.app-nav a{
+    display:block;
+    padding:.875rem 1rem;
+    color:#252930;
+    position:relative;
+    padding-left:3rem;
+    text-decoration: none;
+    /* border-left:3px solid rgba(0,0,0,0) */
+}
 .app-nav .nav-link.active{
     color:#000;
-    background: rgba(255, 144, 18, 1/0.15);
+    background: rgba(255, 144, 18, 0.15);
     border-left:3px solid #FF9012;
-    font-weight:500
+    font-weight:500;
 }
 .app-nav .submenu-item{
     margin-bottom:0;
     list-style: none;
 }
+.app-nav .submenu-link{
+    margin-left:2rem;
+    padding:.5rem 1rem;
+    padding-left:1rem;
+    position:relative;
+    display:block;
+    margin-bottom:0;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #474747;
+}
 .logout-btn{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 243px;
+    height: 49px;
     background-color: #FF9012 !important;
-    border-radius: 8px;
+    border-radius: 8px !important;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
 }
 .sidebar-responsive {
     display: inline !important;
@@ -79,6 +111,42 @@
     height: 100vh;
     top: unset !important;
 }
+.rounded-number{
+    width: 18px;
+    height: 18px;
+    background: #FF9012;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rounded-number span{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+    /* .app-nav .submenu-link:before{
+        background-color:#e7e9ed;content:" ";
+        display:inline-block;
+        height:inherit;
+        left:0;
+        position:absolute;
+        width:2px;
+        margin-top:-0.5rem;
+    } */
+    /* .app-nav .submenu-link:hover{
+        color:#252930
+    }
+    .app-nav .submenu-link.active{
+        color:#474747
+    }
+    .app-nav .submenu-link.active:before{
+        background-color:#474747
+    } */
 
 @media only screen and (max-width: 978px) {
     #sidebar {

@@ -8,7 +8,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             <div className='sidepanel-inner'>
                 <div className='sidebar__title d-flex justify-content-center'>
                     <div className='sidebar__img'>
-                        <img src={logo} alt="logo" className='img-fluid' />
+                        <img src={logo} alt="logo" className='img-fluid pt-3' />
                     </div>
                     <i 
                     onClick={() => closeSidebar()}
@@ -19,7 +19,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
 
                 <div className="sidebar__menu">
-                <nav id="app-nav-main" class="app-nav-main app-nav flex-grow-1">
+                <nav id="app-nav-main" className="app-nav-main app-nav flex-grow-1">
 						<div>
 							<li className="nav-item">
 								<a className="nav-link" href="index.html">
@@ -48,8 +48,8 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.0625 3.47368H16.625C17.9367 3.47368 19 4.5105 19 5.78947V19.6842C19 20.9632 17.9367 22 16.625 22H2.375C1.06332 22 0 20.9632 0 19.6842V5.78947C0 4.5105 1.06332 3.47368 2.375 3.47368H5.9375C5.9375 1.55522 7.53249 0 9.5 0C11.4675 0 13.0625 1.55522 13.0625 3.47368ZM10.6875 3.47368C10.6875 4.11317 10.1558 4.63158 9.5 4.63158C8.84416 4.63158 8.3125 4.11317 8.3125 3.47368C8.3125 2.8342 8.84416 2.31579 9.5 2.31579C10.1558 2.31579 10.6875 2.8342 10.6875 3.47368ZM2.375 8.10526C2.375 7.46578 2.90666 6.94737 3.5625 6.94737H15.4375C16.0933 6.94737 16.625 7.46578 16.625 8.10526C16.625 8.74475 16.0933 9.26316 15.4375 9.26316H3.5625C2.90666 9.26316 2.375 8.74475 2.375 8.10526ZM3.5625 11.5789C2.90666 11.5789 2.375 12.0974 2.375 12.7368C2.375 13.3763 2.90666 13.8947 3.5625 13.8947H15.4375C16.0933 13.8947 16.625 13.3763 16.625 12.7368C16.625 12.0974 16.0933 11.5789 15.4375 11.5789H3.5625ZM3.5625 16.2105C2.90666 16.2105 2.375 16.7289 2.375 17.3684C2.375 18.0079 2.90666 18.5263 3.5625 18.5263H7.125C7.78084 18.5263 8.3125 18.0079 8.3125 17.3684C8.3125 16.7289 7.78084 16.2105 7.125 16.2105H3.5625Z" fill="#FF9012"></path>
 										</svg>
 									</span>
-									<span class="nav-link-text nav-link-color">Project Listing</span>
-									<span class="submenu-arrow">
+									<span className="nav-link-text nav-link-color">Project Listing</span>
+									<span className="submenu-arrow">
 										<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 											<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
 										</svg>
@@ -58,10 +58,43 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 							
 								<div id="submenu-1" class="collapse submenu submenu-1" data-bs-parent="#menu-accordion">
 									<ul className="submenu-list list-unstyled">
-										<li className="submenu-item"><a class="nav-link active" href="#">All</a></li>
-										<li className="submenu-item"><a class="submenu-link" href="account.html">View 1</a>
+										<li className="submenu-item">
+											<a className="nav-link active" href="#">
+												<div className='d-flex align-items-center justify-content-between'>
+													<span>All</span>
+														<div className='rounded-number'>
+															<span>3</span>
+														</div>
+												</div>
+											</a>
 										</li>
-										<li className="submenu-item"><a class="submenu-link" href="settings.html">View 2</a>
+										<li className="submenu-item">
+											<a className="submenu-link" href="#">
+												<div className='d-flex align-items-center justify-content-between'>
+													<span>View 1</span>
+														<div className='rounded-number'>
+														<span>3</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li className="submenu-item">
+											<a className="submenu-link" href="settings.html">
+											<div className='d-flex align-items-center justify-content-between'>
+													<span>View 2</span>
+														<div className='rounded-number'>
+														<span>3</span>
+													</div>
+												</div></a>
+										</li>
+										<li className="submenu-item">
+											<a class="submenu-link" href="settings.html">
+											<div className='d-flex align-items-center justify-content-between'>
+													<span>View 3</span>
+														<div className='rounded-number'>
+														<span>3</span>
+													</div>
+												</div></a>
 										</li>
 									</ul>
 									<div>
@@ -79,8 +112,8 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 								</div>
 							</li>
 							
-							<li class="nav-item has-submenu pt-5">
-								<a class="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-2" aria-expanded="false" aria-controls="submenu-2">
+							<li className="nav-item has-submenu pt-5">
+								<a className="nav-link submenu-toggle" href="#" data-bs-toggle="collapse" data-bs-target="#submenu-2" aria-expanded="false" aria-controls="submenu-2">
 									<span className="nav-icon">
 
 										<svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,12 +130,43 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 								</a>
 							
 								<div id="submenu-2" class="collapse submenu submenu-2" data-bs-parent="#menu-accordion">
-									<ul cclassNamelass="submenu-list list-unstyled">
-										<li class="submenu-item"><a class="nav-link active" href="#">All</a></li>
-							
-							<li className="submenu-item"><a class="submenu-link" href="#">View 1</a></li>
-							<li className="submenu-item"><a class="submenu-link" href="#">View 2</a></li>
-							<li className="submenu-item"><a class="submenu-link" href="#">View 3</a></li>
+									<ul className="submenu-list list-unstyled">
+										<li className="submenu-item">
+											<a className="nav-link active" href="#">
+											<div className='d-flex align-items-center justify-content-between'>
+													<span>All</span>
+														<div className='rounded-number'>
+															<span>3</span>
+														</div>
+												</div>
+											</a>
+										</li>
+										<li className="submenu-item">
+											<a class="submenu-link" href="#">
+											<div className='d-flex align-items-center justify-content-between'>
+													<span>View 1</span>
+														<div className='rounded-number'>
+														<span>3</span>
+													</div>
+												</div>
+											</a>
+										</li>
+										<li className="submenu-item">
+											<a class="submenu-link" href="#">
+												<div className='d-flex align-items-center justify-content-between'>
+													<span>View 1</span>
+														<div className='rounded-number'>
+														<span>2</span>
+													</div>
+												</div></a></li>
+										<li className="submenu-item">
+											<a class="submenu-link" href="#">
+											<div className='d-flex align-items-center justify-content-between'>
+													<span>View 3</span>
+														<div className='rounded-number'>
+														<span>3</span>
+													</div>
+												</div></a></li>
 						</ul>
 						<div>
 							<a href="#" className="nav-link mb-3">
@@ -120,9 +184,9 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 				</li>
 				</ul>
 				</nav>
-                <div class="d-flex flex-direaction-column justify-content-center pb-5">
-					<a href="#" class="btn logout-btn px-5 text-white">
-						<img src={logout} width="15" height="15" class="me-1" alt="logout" /> logout
+                <div className="d-flex flex-direaction-column justify-content-center pb-5">
+					<a href="#" class="btn logout-btn text-white">
+						<img src={logout} width="27" height="27" class="me-1" alt="logout" /> logout
 					</a>
 				</div>
                 </div>

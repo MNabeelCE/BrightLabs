@@ -11,7 +11,7 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                     </div>
                 </div>
                 <div className='col-9 align-self-end'>
-                 <div className="row">
+                 <div className="row justify-content-between">
                     <div className="col-8 align-self-end">
                         <div className="top-menu-items">
                             <ul className="d-flex align_items-center">
