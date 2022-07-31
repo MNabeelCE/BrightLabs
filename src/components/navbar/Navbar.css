@@ -1,65 +1,86 @@
-.navbar {
-    background: #fff;
-    grid-area: nav;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px 0 30px;
-    border-bottom: 1px solid lightgray;
+.dashboad-bg-color{
+    background-color: #474747;
+    height: 90px;
+    justify-content: space-around;
+    z-index: 1 !important;
+}
+.app-search-form {
+    position: relative;
+    max-width: 600px;
+}
+.app-search-form .search-input {
+    font-size: .875rem;
+    border-radius: 28px;
+    padding-right: 3rem;
+    padding-left: 1rem;
+}
+.app-search-form .search-btn {
+    color: #828d9f;
+    background: none !important;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 0;
+    padding: 0.5rem 1rem;
+}
+.app-search-form .search-btn:active, .app-search-form .search-btn:focus, .app-search-form .search-btn:hover {
+    outline: none !important;
+    color: #15a362;
+    box-shadow: none;
+}
+.top-menu-items ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.top-menu-items ul li a:active {
+    color: #FF9012;
+}
+.top-menu-items ul li.nav-item{
+    list-style: none;
+    margin: 0 5rem 0 0;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
 }
 
 .nav_icon {
     display: none;
+    color: #fff;
 }
 
-.nav-icon > i {
-    font-size: 26px;
-    color: #a5aaad;
+.nav-icon {
+    color: #fff !important;
 }
 
 .navbar__left > a {
-    margin-right: 30px;
+    /* margin-right: 30px;
     text-decoration: none;
     color: #a5aaad;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 700; */
 }
 
 .navbar__left .active_link {
-    color: #265acc;
+    /* color: #265acc;
     border-bottom: 3px solid #265acc;
-    padding-bottom: 12px;
+    padding-bottom: 12px; */
 }
 
-.navbar__right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.navbar__right > a {
-    margin-left: 20px;
-    text-decoration: none;
-}
 
-.navbar__right > a > i {
-    color: #a5aaad;
-    border-radius: 50px;
-    font-size: 16px;
-    background: #fff;
-    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #fff;
-    padding: 7px;
-}
+
 
 @media only screen and (max-width: 978px) {
     .nav_icon {
         display: inline;
+        color: #fff;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .navbar__left {
+    /* .navbar__left {
         display: none;
-    }
+    } */
 }
