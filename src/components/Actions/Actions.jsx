@@ -7,27 +7,27 @@ const Actions = () => {
     return (
         <div>
             <div className="btn custom-border mb-2">
-                                    <span className="custom-img">
-                                        <img src={archive} alt="seach" />
-                                    </span>
+                <span className="custom-img">
+                    <img src={archive} alt="seach" />
+                </span>
                 <span>Archive</span>
             </div>
             <div className="btn custom-border mb-2">
-                                    <span className="custom-img">
-                                        <img src={starIcon} alt="seach" />
-                                    </span>
+                <span className="custom-img">
+                    <img src={starIcon} alt="seach" />
+                </span>
                 <span>Starred</span>
             </div>
             <div className="btn custom-border tick mb-2">
-                                    <span className="custom-img">
-                                        <img src={rightTtickIicon} alt="seach" />
-                                    </span>
+                <span className="custom-img">
+                    <img src={rightTtickIicon} alt="seach" />
+                </span>
                 <span>Applied</span>
             </div>
             <div className="btn custom-border last-btn mb-2">
-                                    <span className="custom-img">
-                                        <img src={noteIicon} alt="seach" />
-                                    </span>
+                <span className="custom-img">
+                    <img src={noteIicon} alt="seach" />
+                </span>
                 <span>Notes</span>
             </div>
         </div>

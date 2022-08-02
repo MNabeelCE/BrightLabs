@@ -4,9 +4,9 @@ const ScoreBox = (props) => {
     return (
         <div className="main-box">
             <div className="score-box">
-                                        <span className="nav-icon">
-                                            <img src={search} alt="seach" className="me-1" />
-                                        </span>
+                <span className="nav-icon">
+                    <img src={search} alt="seach" className="me-1" />
+                </span>
                 <span className="hourly">Hourly</span>
                 <div className="sub-hourly">$15-$30</div>
             </div>
@@ -15,9 +15,9 @@ const ScoreBox = (props) => {
                 <div className="custom-border-bottom text-center score">
                     <span>score</span></div>
                 <div className="text-center py-1">
-                                            <span className="nav-icon">
-                                                <img src={props.source} alt="seach" />
-                                            </span>
+                    <span className="nav-icon">
+                        <img src={props.source} alt="seach" />
+                    </span>
                     <span className="individual">{props.person}</span>
                 </div>
             </div>

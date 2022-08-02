@@ -15,8 +15,8 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                     <div className="col-8 align-self-end">
                         <div className="top-menu-items">
                             <ul className="d-flex align_items-center">
-                                <li className='nav-item'><a className=' nav-link active" aria-current="page"' href="#"> News(10)</a></li>
-                                <li className='nav-item'><a className='nav-link' href="#"> Starred(7)</a></li>
+                                <li className='nav-item'><a className=' nav-link active" aria-current="page"' href="#"> News (10)</a></li>
+                                <li className='nav-item'><a className='nav-link' href="#"> Starred (7)</a></li>
                                 <li className='nav-item'><a className='nav-link' href="#"> Archived (19)</a></li>
                                 <li className='nav-item'><a className='nav-link' href="#"> Applied (23)</a></li>
                             </ul>
