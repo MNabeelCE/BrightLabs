@@ -162,11 +162,13 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 										<li className="submenu-item">
 											<a className="submenu-link" href="#">
 											<div className='d-flex align-items-center justify-content-between'>
-													<span>View 3</span>
-														<div className='rounded-number'>
-														<span>3</span>
-													</div>
-												</div></a></li>
+												<span>View 3</span>
+												<div className='rounded-number'>
+													<span>3</span>
+												</div>
+											</div>
+											</a>
+										</li>
 						</ul>
 						<div>
 							<a href="#" className="nav-link mb-3">

@@ -16,12 +16,11 @@ const App = () => {
   }
  
   return (
-		<div className="app-header">
-			<Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
-			<Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
-			   <Main />
-		  
-	 </div>
+    <div className="app-header">
+        <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
+        <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
+        <Main />
+    </div>
   )
 }
 
