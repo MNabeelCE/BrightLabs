@@ -4,7 +4,7 @@ import avatar from '../../../assets/avatar.jpg'
 const Navbar = ({ sidebarOpen, openSidebar }) => {
     return (
         <div className='container-fluid'>
-          <div className='row dashboad-bg-color sticky-top'>
+          <div className='row dashboad-bg-color'>
                 <div className='col-2 align-self-center'>
                     <div className="nav_icon" onClick={() => openSidebar()}>
                         <i className="fa fa-bars" aria-hidden="true"></i>

@@ -13,7 +13,7 @@
     background: #fff;
     box-shadow: 0px 4px 34px rgb(0 0 0 / 5%);
     border-radius: 16px;
-    width: 260px;
+    width: 276px;
     height: 100%;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -27,6 +27,7 @@
 }
 .sidebar__menu {
     height: 78%;
+    margin-top: 14px;
     flex-direction: column;
     display: flex;
     justify-content: space-around;

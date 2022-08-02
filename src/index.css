@@ -117,7 +117,8 @@
      color: #656565;
   }
   .more{
-     color: #FF9012;
+     color: #FF9012 !important;
+      font-size: 15px !important;
   }
 
   .less-month{
@@ -130,10 +131,13 @@
     line-height: 135%;
     color: #838383;
   }
-  .pera p{
+  .pera textarea{
     font-size: 15px;
     line-height: 151%;
+      width: 100%;
     color: #656565;
+      border: none;
+      outline: none;
   }
 
 
