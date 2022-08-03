@@ -57,6 +57,7 @@
 }
 .app-nav-main{
  overflow-y:auto;
+    margin-bottom: 50px !important;
 }
 .app-nav a{
     display:block;

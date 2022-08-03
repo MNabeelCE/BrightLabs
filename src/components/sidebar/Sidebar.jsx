@@ -124,7 +124,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 
 							</a>
 
-							<div id="submenu-2" className="collapse submenu submenu-2" data-bs-parent="#menu-accordion">
+							<div id="submenu-2" className="collapse submenu submenu-2" data-bs-parent="#menu">
 								<ul className="submenu-list list-unstyled">
 									<li className="submenu-item">
 										<a className="nav-link active" href="#">
@@ -181,7 +181,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
 			</li>
 					</ul>
 				</nav>
-                <div className="d-flex flex-direaction-column justify-content-center pb-5">
+                <div className="d-flex flex-direaction-column justify-content-center pb-4">
 					<a href="#" className="btn logout-btn text-white">
 						<img src={logout} width="27" height="27" className="me-1" alt="logout" /> logout
 					</a>

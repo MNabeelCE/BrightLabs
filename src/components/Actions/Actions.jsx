@@ -30,6 +30,18 @@ const Actions = () => {
                 </span>
                 <span>Notes</span>
             </div>
+            <div className="btn custom-border mb-2">
+                <span className="custom-img">
+                    <img src={archive} alt="seach" />
+                </span>
+                <span>Unarchive</span>
+            </div>
+            <div className="btn custom-border last-btn mb-2">
+                <span className="custom-img">
+                    <img src={noteIicon} alt="seach" />
+                </span>
+                <span>Delete</span>
+            </div>
         </div>
     );
 }
