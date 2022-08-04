@@ -30,16 +30,32 @@
     border-radius: 25px;
     border: 1px solid #929292;
     margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
     outline: none;
     width: 427px !important;
-    padding: 13px 29px;
+    padding: 13px 55px;
 }
 
 input::placeholder {
     color: #222222 !important;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
+}
+
+input#signin-email {
+    background-image: url('./assets/icons/user.png');
+    background-position: 29px center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+input#signin-password {
+    background-image: url('./assets/icons/key.png');
+    background-position: 29px center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
 }
 
 .login-field:focus {

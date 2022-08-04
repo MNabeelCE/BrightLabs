@@ -15,19 +15,17 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                     <div className="col-8 align-self-end">
                         <div className="top-menu-items">
                             <ul className="d-flex align_items-center">
-                                <li className='nav-item'><a className=' nav-link active" aria-current="page"' href="#"> News (10)</a></li>
-                                <li className='nav-item'><a className='nav-link' href="#"> Starred (7)</a></li>
-                                <li className='nav-item'><a className='nav-link' href="#"> Archived (19)</a></li>
-                                <li className='nav-item'><a className='nav-link' href="#"> Applied (23)</a></li>
+                                <li className='nav-item'><a className='nav-button nav-link active" aria-current="page"' href="#"> News (10)</a></li>
+                                <li className='nav-item'><a className='nav-button nav-link' href="#"> Starred (7)</a></li>
+                                <li className='nav-item'><a className='nav-button nav-link' href="#"> Archived (19)</a></li>
+                                <li className='nav-item'><a className='nav-button nav-link' href="#"> Applied (23)</a></li>
                             </ul>
                         </div>
                     </div>
                     <div className ="col-3">
-                        <form className ="app-search-form pb-2">
-                            <input type="text" placeholder="Search..." name="search" className="form-control search-input" />
-                            <button type="submit" className="btn search-btn btn-primary" value="Search">
-                            <i className="fas fa-search"></i></button>
-                        </form>
+                        <div className ="app-search-form pb-2">
+                            <input type="text" placeholder="Search" name="search" className="form-control search-input" />
+                        </div>
                     </div>
                     </div>
                 </div>

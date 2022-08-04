@@ -2,7 +2,8 @@ import archive from "../../../assets/icons/archive-icon.png";
 import starIcon from "../../../assets/icons/star.png";
 import rightTtickIicon from "../../../assets/icons/right-tick.png";
 import noteIicon from "../../../assets/icons/note.png";
-
+import unArchive from "../../../assets/icons/ic_round-unarchive.svg";
+import deleteIcon from "../../../assets/icons/Vector.svg";
 const Actions = () => {
     return (
         <div>
@@ -32,13 +33,13 @@ const Actions = () => {
             </div>
             <div className="btn custom-border mb-2">
                 <span className="custom-img">
-                    <img src={archive} alt="seach" />
+                    <img src={unArchive} alt="unarchive" />
                 </span>
                 <span>Unarchive</span>
             </div>
             <div className="btn custom-border last-btn mb-2">
                 <span className="custom-img">
-                    <img src={noteIicon} alt="seach" />
+                    <img src={deleteIcon} alt="delete" />
                 </span>
                 <span>Delete</span>
             </div>

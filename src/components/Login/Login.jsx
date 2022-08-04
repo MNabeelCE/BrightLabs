@@ -17,7 +17,7 @@ const Login = () => {
                                     <div className="email mb-3">
                                         <label className="sr-only" htmlFor="signin-email">Email</label>
                                         <input id="signin-email" name="signin-email" type="email"
-                                               className="form-control signin-email login-field" placeholder="Email address"
+                                               className="form-control signin-email login-field" placeholder="Username or Email"
                                                required="required"/>
                                     </div>
                                     <div className="password mb-3">
